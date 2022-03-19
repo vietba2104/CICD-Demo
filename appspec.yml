@@ -2,22 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/var/www/html
-hooks:
-  BeforeInstall:
-    - location: scripts/app_stop.sh
-      timeout: 300
-      runas: ec2-user
-  AfterInstall:
-    - location: scripts/app_stop.sh
-      timeout: 300
-      runas: ec2-user
+    destination: /var/www/html
+hook:
   ApplicationStop:
     - location: scripts/app_stop.sh
       timeout: 300
-      runas: user
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/app_start.sh
-    - location: scripts/create_test_db.sh
       timeout: 300
-      runas: user
+      runas: ec2-user

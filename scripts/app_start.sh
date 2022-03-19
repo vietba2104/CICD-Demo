@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Stop httpd"
-systemctl stop httpd
+echo "start httpd"
+systemctl start httpd
