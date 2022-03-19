@@ -5,10 +5,10 @@ files:
     destination: /home/ec2-user/var/www/html
 hook:
   ApplicationStop:
-    - localtion: scripts/app_stop.sh
+    - localtion: script/app_stop.sh
       timeout: 300
       runas: ec2-user
   ApplicationStart:
-    - localtion: scripts/app_start.sh
+    - localtion: script/app_start.sh
       timeout: 300
       runas: ec2-user
