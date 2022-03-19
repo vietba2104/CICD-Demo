@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "start httpd"
+echo "start httpd "
 systemctl start httpd

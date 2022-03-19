@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Stop httpd"
+echo "Stop httpd "
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
