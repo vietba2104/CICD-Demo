@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/html
-hook:
+hooks:
   ApplicationStop:
     - location: scripts/app_stop.sh
       timeout: 300
