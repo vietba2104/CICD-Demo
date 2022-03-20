@@ -6,7 +6,7 @@ sudo chmod -R 777 /home/ec2-user/cicd-app
 #navigate into our working directory where we have all our github files
 cd /home/ec2-user/cicd-app
 
-yum install httpd -y
+sudo yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
 
