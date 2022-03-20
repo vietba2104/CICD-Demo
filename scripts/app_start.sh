@@ -7,7 +7,7 @@ sudo chmod -R 777 /home/ec2-user/cicd-app
 cd /home/ec2-user/cicd-app
 
 sudo yum install httpd -y
-systemctl start httpd
-systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
-echo "<h1> Hello from CICD ver 1 </h1>" > /var/www/html/index.html
+sudo echo "<h1> Hello from CICD ver 1 </h1>" > /var/www/html/index.html
